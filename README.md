@@ -38,16 +38,19 @@ installers.  These will be bundled into the output setup executables.
 
 There are several folders in the install_scripts directory: 
 
-  bin/    : Contains the final output executable installer which can be 
+  bin     : Contains the final output executable installer which can be 
             published.  (Do not include in the repository.)
+
   language: A folder with the language files. 
-  tools/  : Containing the setup programs for the JDK and PostgreSQL.  These 
+
+  tools   : Containing the setup programs for the JDK and PostgreSQL.  These 
             binaries are not/should not be included in the repository but 
             will be required if the installer is executed with 
             !define OFF-LINE. If OFF-LINE is not defined, the installer will
             not include any binaries but will instead download from the 
             respective web sites.
-  utils/  : Contains batch files and other supporting files  
+            
+  utils   : Contains batch files and other supporting files  
           
 Please look into the "Adempiere_winx64.nsi" file before running this script. 
 There are some "!define" lines, which should be adjusted for the specific 
